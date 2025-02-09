@@ -46,4 +46,8 @@ resource "google_compute_instance" "instance-1" {
 
     }
   }
+  # artiinya resource ini tidak akan bissa di hapus
+  lifecycle {
+    prevent_destroy = false
+  }
 }
